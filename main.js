@@ -206,10 +206,10 @@ function starIn(a)
 					if ((a.handStar[s].left >= 500) && (a.handStar[s].top <=120))
 					{
 						if (!gameScene.shipLoad)
-							{
-							gameScene.shipLoad = true;
-							//var shipLoad = addDiv(imageShipLoad, 650, 100, 70, 38, 5, 1);
-							}
+						{
+							 gameScene.shipLoad = true;
+							 shipLoad = addDiv(imageShipLoad, 640, 95, 70, 38, 5, 1);
+						}
 						delDiv(a.handStar[s].div);
 						a.currBps -= a.handStar[s].weight;
 						a.handStar.splice(s,1);			
