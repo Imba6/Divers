@@ -19,8 +19,8 @@ function playerObject(x, y)
 		this.speedX = 20;
 		this.speedY = 20;
 		this.intervalId = 0;
-		this.width = 46;
-		this.height = 73;
+		this.width = 45;
+		this.height = 72;
 		this.left = x;
 		this.top = y;
 		this.handsT = 0;
@@ -89,7 +89,7 @@ function playerObject(x, y)
 		playerObject.prototype.moveDown = function()
 		{	if (this.first)
 			{
-				this.changeSize(imageDiverTos, 46, 73);
+				this.changeSize(imageDiverTos, 45, 72);
 			}
 			this.handsT = this.top;
 			this.handsL = this.left + this.width - 15;
@@ -119,7 +119,7 @@ function playerObject(x, y)
 		playerObject.prototype.moveLeft = function()
 		{	if (this.first)	
 			{
-				this.changeSize(imageDiverLeft, 66, 63);
+				this.changeSize(imageDiverLeft, 65, 62);
 			}
 			this.handsT = this.top + 30;
 			this.handsL = this.left - 25;
@@ -150,7 +150,7 @@ function playerObject(x, y)
 		playerObject.prototype.moveRight =  function()
 		{	if (this.first)		
 			{
-				this.changeSize(imageDiverRight, 66, 63);
+				this.changeSize(imageDiverRight, 65, 62);
 			}			
 			this.handsT = this.top + 30;
 			this.handsL = this.left + this.width - 25;
@@ -175,7 +175,7 @@ function playerObject(x, y)
 		playerObject.prototype.moveUp = function()
 		{	if (this.first)		
 			{
-				this.changeSize(imageDiverTos, 46, 73);
+				this.changeSize(imageDiverTos, 45, 72);
 			}        	
 		
 				if ((this.top <= gameScene.height - gameScene.height / 3) && (this.stops == 0))
